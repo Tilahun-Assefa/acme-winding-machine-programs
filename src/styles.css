@@ -1,1 +1,39 @@
 /* You can add global styles to this file, and also import other style files */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.title-container {
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.title {
+    border: 1px solid #fff;
+    width: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+.detail-container {
+    color: #fff;
+    background-color: #5995DA;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.parts {
+    border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+}

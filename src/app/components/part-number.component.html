@@ -1,0 +1,8 @@
+<div class="title-container">
+    <h1 class="title">Part Numbers</h1>
+</div>
+<div *ngFor="let pn of partNumbers" class="detail-container">
+    <div class="parts">
+        <a [routerLink]="['/part-detail', pn.partNo]">{{pn.partNo}}</a>
+    </div>
+</div>
