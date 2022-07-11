@@ -1,10 +1,11 @@
-<!-- <div class="card">
+<div class="card">
     <h3 class="card-header">Login Form</h3>
     <div class="card-body col-md-4 offset-md-1">
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <div class="form-group">
                 <label for="email" class="col-form-label">Email:</label>
-                <input id="email" type="text" formControlName="email" class="form-control" [ngClass]="{'is-invalid': submitted && email?.errors}" />
+                <input id="email" type="text" formControlName="email" class="form-control"
+                    [ngClass]="{'is-invalid': submitted && email?.errors}" />
                 <div>
                     <div *ngIf="submitted && email?.errors?.['required']">User email is required</div>
                 </div>
@@ -13,16 +14,15 @@
             <div class="form-group">
                 <label for="password" class="col-form-label ">Password:</label>
                 <div class="">
-                    <input id="password" type="text" formControlName="password" class="form-control" [ngClass]="{'is-invalid': submitted && password?.errors }" />
+                    <input id="password" type="password" formControlName="password" class="form-control"
+                        [ngClass]="{'is-invalid': submitted && password?.errors }" />
                 </div>
                 <div>
                     <div *ngIf="submitted && password?.errors?.['required']">Password is required</div>
                 </div>
             </div>
-            <button [disabled]="loading" class="btn btn-primary mb-2">
-                Login
-            </button>
+            <button [disabled]="loading" class="btn btn-primary mb-2"> Login </button>
             <div *ngIf="errorMessage" class="alert alert-danger mt-3 mb-0">{{errorMessage}}</div>
         </form>
     </div>
-</div> -->
+</div>

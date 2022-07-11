@@ -19,16 +19,15 @@
                 </div>
 
                 <div class="example-full-width">
-                    <label>Choose a role...</label>
+                    <label>Choose a wire...</label>
                     <select>
-            <option [value]="roles" *ngFor="let roles of Roles">{{roles}}
-            </option>
-          </select>
+                        <option [value]="wire" *ngFor="let wire of wires">{{wire}} </option>
+                    </select>
                 </div>
 
             </div>
 
-            <button mat-stroked-button color="accent" class="btn-block">Register</button>
+            <button class="btn-block">Register</button>
 
         </form>
     </div>
