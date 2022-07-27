@@ -9,7 +9,8 @@ import { PartNumberService } from './part-numbers.service'
   templateUrl: './part-number.component.html',
 })
 export class PartNumberComponent implements OnInit {
-  partNumbers: Array<PartNumber> | undefined
+  partNumbers: Array<PartNumber> | undefined;
+
 
   constructor(private pnService: PartNumberService, private authService: AuthService) {}
 
@@ -19,4 +20,7 @@ export class PartNumberComponent implements OnInit {
   logout() {
     this.authService.logout();
   }  
+  isUserAuthenticated(){
+    return this.authService.isLoggedIn();
+  }
 }
